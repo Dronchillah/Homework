@@ -61,5 +61,32 @@ public class Converter {
         }
         return processed;
     }
+
+
+    public static String[] decimalToBinary(int[] array) {
+        String[] processed = new String[array.length];
+
+        for (int i = 0; i < array.length; i++) {
+            Stack<Integer> stackForReverse = new Stack<>();
+            int buff = array[i];
+            String number = "";
+
+            while (buff > 0) {
+
+                if (buff % 2 == 0) {
+                    stackForReverse.push(0);
+                    buff = buff / 2;
+                } else if (buff % 2 == 1) {
+                    stackForReverse.push(1);
+                    buff = buff / 2;
+                }
+            }
+            while (!stackForReverse.isEmpty()){
+                number = number + stackForReverse.pop();
+            }
+            processed[i] = number;
+        }
+        return processed;
+    }
 }
 
