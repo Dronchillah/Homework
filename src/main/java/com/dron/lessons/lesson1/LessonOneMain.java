@@ -14,7 +14,7 @@ public class LessonOneMain {
 
         int y = 7;
         double z = 3 * Math.pow(y, 2) + Math.sqrt(Math.pow(y, 3) + 1);
-        double s = Math.sqrt(Math.cos(4) * Math.pow(y, 2) + 7.151);
+        double s = Math.sqrt(Math.cos(4 * Math.pow(y, 2)) + 7.151);
 
 //        "0000000110011001" = 199
 //        "0011100011001000" = 38C8
