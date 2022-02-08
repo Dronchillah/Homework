@@ -11,6 +11,7 @@ public class LessonOneMain {
         System.out.println(Arrays.toString(Converter.binaryToDecimal(binaryValues)));
         System.out.println(Arrays.toString(Converter.binaryToOctal(binaryValues)).replaceAll("0", ""));
         System.out.println(Arrays.toString(Converter.decimalToBinary(decimalValues)));
+        System.out.println(Arrays.toString(Converter.binaryToHexadecimal(binaryValues)).replaceAll("0", ""));
 
         int y = 7;
         double z = 3 * Math.pow(y, 2) + Math.sqrt(Math.pow(y, 3) + 1);
